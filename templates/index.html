@@ -1,0 +1,69 @@
+<!-- UI web mínima (Jinja) --> 
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Chatbot – Suporte Psicológico e Bem-Estar Mental</title>
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css', v=3) }}"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}?v=3">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<script> 
+  document.addEventListener("DOMContentLoaded", () => {
+    const chat = document.getElementById("chat");
+
+    // Função para rolar até o final do chat
+    function scrollToBottom() {
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    // Ao carregar a página, desce até o final
+    scrollToBottom();
+
+    // Quando o formulário for enviado, aguarda o reload e desce de novo
+    const form = document.getElementById("chat-form");
+    if (form) {
+      form.addEventListener("submit", () => {
+        // Dá tempo da página atualizar antes de rolar
+        setTimeout(scrollToBottom, 300);
+      });
+    }
+  });
+</script>
+
+<body>
+  <div class="container">
+    <h1>Chatbot para Suporte Psicológico e Bem-Estar Mental</h1>
+    
+    {% if safety_banner %}
+    <div class="safety-banner">
+      {{ safety_banner|safe }}
+    </div>
+    {% endif %}
+
+        <!-- Chat -->
+    <div id="chat">
+  {% for u, b, ts in history %}
+    <div class="turn">
+      <div class="turn-head small-date">{{ ts }}</div>
+      <div class="turn-body">
+        <div class="msg user"><strong>Usuário:</strong> {{ u }}</div>
+        <div class="msg bot"><strong>Chatbot:</strong> {{ b|safe }}</div>
+        <!-- <div class="msg bot"><strong>Chatbot:</strong> {{ b }}</div> -->
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+
+  <!-- Caixa de mensagens -->
+    <form method="POST" id="chat-form">
+      <div class="input-row">
+        <input type="text" name="msg" placeholder="Digite sua mensagem..." required autofocus>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+
+</body>
+</html>

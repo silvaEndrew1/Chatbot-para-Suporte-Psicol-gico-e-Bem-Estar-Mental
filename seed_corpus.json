@@ -1,0 +1,52 @@
+{
+  "saudacao": [
+    "oi", "olá", "ola", "e aí", "eai", "fala", "firmeza", "bom dia", "boa tarde", "boa noite",
+    "oi tudo bem", "como você está", "como voce esta", "tudo certo", "blz", "beleza"
+  ],
+
+  "ansiedade": [
+    "ansiedade", "ansioso", "ansiosa", "ansiozo", "crise de ansiedade", "pânico", "panico",
+    "taquicardia", "pensamentos acelerados", "respiração curta", "falta de ar", "sudorese",
+    "preocupação", "preocupacao", "nervoso", "tensão", "tensao", "angústia", "angustia"
+  ],
+
+  "tristeza": [
+    "triste", "tristeza", "pra baixo", "desanimado", "desanimada", "sem vontade",
+    "queria chorar", "chorando", "coração apertado", "coracao apertado", "cabeca pesada",
+    "me sinto sozinho", "me sinto sozinha", "desanimo"
+  ],
+
+  "estresse": [
+    "estresse", "estressado", "estressada", "cansado", "cansada", "sobrecarregado",
+    "sobrecarregada", "pressionado", "pressão", "pressao", "muito trabalho", "muito trampo",
+    "não dou conta", "nao dou conta", "esgotado", "esgotada", "estafa"
+  ],
+
+  "sono": [
+    "insônia", "insonia", "dormir", "sono", "não consigo dormir", "nao consigo dormir",
+    "acordar à noite", "acordar a noite", "acordo de madrugada", "pesadelos", "virando a noite",
+    "dormindo mal", "sono leve", "dificuldade para dormir"
+  ],
+
+  "autocuidado": [
+    "autocuidado", "me cuidar", "cuidar de mim", "hábitos", "habitos", "rotina",
+    "organização", "organizacao", "alimentação", "alimentacao", "exercício", "exercicio",
+    "bem-estar", "bem estar", "preciso me organizar", "preciso de rotina"
+  ],
+
+  "gratidao": [
+    "gratidão", "gratidao", "sou grato", "sou grata", "reconheço coisas boas",
+    "coisas boas do dia", "agradecer pelas coisas", "listar gratidão", "praticar gratidão"
+  ],
+
+  "encerrar": [
+    "tchau", "até mais", "ate mais", "até logo", "ate logo", "obrigado", "obrigada",
+    "valeu", "falou", "até amanhã", "ate amanha", "tenha um bom dia", "boa noite"
+  ],
+
+  "smalltalk": [
+    "como você esta?", "tudo bem?", "apenas enviando uma mensagem", "estou apenas enviando uma mensagem",
+    "apenas testando", "estou apenas testando", "testando o sistema", "ok", "ta bom", "certo",
+    "somente isso", "apenas isso"
+  ]
+}

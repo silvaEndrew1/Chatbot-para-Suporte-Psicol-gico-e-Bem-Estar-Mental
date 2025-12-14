@@ -1,0 +1,9 @@
+Requerimentos:
+
+-> flask==3.0.3
+-> nltk==3.9.1
+-> spacy==3.7.5
+-> transformers==4.44.2
+-> torch
+-> pydantic==2.8.2
+-> python-dotenv==1.0.1

@@ -1,0 +1,127 @@
+/* CSS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #d6eaf8;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  overflow: hidden;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.safety-banner {
+  background-color: #fdecea;
+  border: 1px solid #f5c2c0;
+  color: #842029;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.safety-msg {
+  background-color: #fdecea;
+  border: 1px solid #f5c2c0;
+  color: #842029;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  line-height: 1.4;
+}
+
+#chat-form {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2980b9;
+  color: white;
+  cursor: pointer;
+}
+
+#chat { /*rolar chat até o fim*/
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  scroll-behavior: smooth;
+  height: 70vh; 
+}
+
+/* aparência básica */
+.turn      { background: rgba(255,255,255,.85); border-radius: 12px; padding: 10px; }
+.turn-head { font-size: 12px; color: #6b7280; margin-bottom: 6px; }
+.msg       { padding: 8px; border-radius: 10px; }
+.msg.user  { background: #e8f6f3; }
+.msg.bot   { background: #fef9e7; margin-top: 6px; }
+
+.user-msg {
+  background: #d6eaf8;
+  border-radius: 12px;
+  padding: 10px;
+  align-self: flex-start;
+}
+
+.bot-msg {
+  background: #fcf3cf;
+  border-radius: 12px;
+  padding: 10px;
+  align-self: flex-end;
+}
+
+.small-date {
+  font-size: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+

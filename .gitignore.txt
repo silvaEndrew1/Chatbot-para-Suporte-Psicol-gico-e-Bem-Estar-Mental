@@ -1,0 +1,14 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Banco de dados
+chatbot.db
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
