@@ -3,7 +3,6 @@
 Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC) no curso de **Tecnologia em Análise e Desencolvimento de Sistemas** do **Centro Universitário de Adamantina (UniFAI)**.
 
 Autor: **Endrew Silva**
-
 Orientadora: **Profª Dra. Míriam Regina Bordinhon**  
 
 ---
